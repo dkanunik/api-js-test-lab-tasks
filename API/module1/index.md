@@ -76,4 +76,3 @@ Please, use the following manuals to perform tasks:
 - https://jestjs.io/docs/getting-started
 - https://www.npmjs.com/package/axios
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
-
