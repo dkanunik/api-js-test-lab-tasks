@@ -75,5 +75,5 @@ Use the template https://git.epam.com/dmytro_kanunik/api-test-with-jest/-/blob/m
 Please, use the following manuals to perform tasks:
 - https://jestjs.io/docs/getting-started
 - https://www.npmjs.com/package/axios
-- https://developer.mozilla.org/en-US/docs/Web/HTTP
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 
