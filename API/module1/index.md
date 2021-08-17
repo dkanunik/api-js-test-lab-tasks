@@ -54,7 +54,7 @@ As example:
 Develop 1 test case and test for it to verify that the HTTP response code equals 422 when an invalid
 range is used. 
 
-Use the template https://git.epam.com/dmytro_kanunik/api-test-with-jest/-/blob/master/tests/finance.test.mjs#L25
+Use the template https://git.epam.com/dmytro_kanunik/api-test-with-jest/-/blob/master/tests/finance.test.mjs#L17    
 
 
 ##### Task 4
