@@ -66,7 +66,7 @@ Use the template https://git.epam.com/dmytro_kanunik/api-test-with-jest/-/blob/m
 
 ##### Task 5
 
-Develop 1 test case and test for it to verify that the HTTP response header "x-request-id" contains value that corresponds to the regular expression.
+Develop 1 test case and test for it to verify that the HTTP response header "**x-request-id**" contains value that corresponds to the regular expression.
 
 Use the template https://git.epam.com/dmytro_kanunik/api-test-with-jest/-/blob/master/tests/finance.test.mjs#L40
 
@@ -76,3 +76,4 @@ Please, use the following manuals to perform tasks:
 - https://jestjs.io/docs/getting-started
 - https://www.npmjs.com/package/axios
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+- https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
