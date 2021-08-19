@@ -12,7 +12,6 @@ The tests should contain the following verifications:
 - HTTP headers
 
 ### Preparation
-
 1. Clone the template project https://github.com/dkanunik/api-test-with-jest
 1. Install dependencies ```npm install```
 
@@ -21,8 +20,7 @@ The tests should contain the following verifications:
 - Tests https://github.com/dkanunik/api-with-jest-simple/blob/main/tests/finance.test.mjs
 - Endpoints descriptions https://github.com/dkanunik/api-with-jest-simple/blob/main/configs/AppConfig.cjs
 
-
-##### Task 1
+### Specification
 Please pay your attention that Finance models method is used for API calling:
 https://github.com/dkanunik/api-test-with-jest/-/blob/master/tests/finance.test.mjs#L13
 
@@ -33,45 +31,23 @@ There is a need to develop a method for Finance model to be able to define the f
 - interval
 - range
 
-##### Task 2
+### Test run
+``` npm test```
 
-Develop 4 test cases and tests for them to verify that the HTTP response code equals 200 when the following parameters 
-are put to Finance.getFinanceData():
-- company
-- region
-- interval
-- range
-
-As example:
+### Expected result
 ```
-    ...
-     let { status } = await Finance.getFinanceData({company:'AAPL'});
-    ...
+As a FinanceModel API user
+    I have to get HTTP response code
+        200 for a valid range
+        422 for a invalid range
+        404 for a nonexistent company
+    
+    I have to get values for response headers
+        content-type
+        x-request-id
 ```
-
-##### Task 3
-
-Develop 1 test case and test for it to verify that the HTTP response code equals 422 when an invalid
-range is used. 
-
-Use the template https://github.com/dkanunik/api-test-with-jest/-/blob/master/tests/finance.test.mjs#L17    
-
-
-##### Task 4
-
-Develop 1 test case and test for it to verify that the HTTP response code equals 404 when an invalid 
-company name is used. 
-
-Use the template https://github.com/dkanunik/api-test-with-jest/-/blob/master/tests/finance.test.mjs#L25
-
-##### Task 5
-
-Develop 1 test case and test for it to verify that the HTTP response header "**x-request-id**" contains value that corresponds to the regular expression.
-
-Use the template https://github.com/dkanunik/api-test-with-jest/-/blob/master/tests/finance.test.mjs#L40
 
 ### Documentation
-
 Please, use the following manuals to perform tasks:
 - https://jestjs.io/docs/getting-started
 - https://www.npmjs.com/package/axios
