@@ -11,7 +11,7 @@ For this task you have to create API tests to check
 ---
 
 ### Preparation
-1. Clone the template project https://github.com/dkanunik/api-test-with-jest
+1. Clone the template project https://github.com/dkanunik/api-with-jest-simple
 1. Install dependencies ```npm install```
 
 ---
@@ -29,6 +29,22 @@ So that, you can define a method once and use it on numerous scenarios.
 
 Use "FinanceModel" class to define required HTTP requests to Yahoo API:
 https://github.com/dkanunik/api-with-jest-simple/blob/main/model/FinanceModel.mjs
+
+##### Tests:
+These files contain required verifications of API. As example:
+- HTTP response code is 200
+- HTTP response header 'content-type' contains 'application/json;charset=utf-8' value
+- HTTP response body contains a JSON document with specific keys and values
+- etc..
+
+Use "finance.test" file to define required verifications of Yahoo API:
+https://github.com/dkanunik/api-with-jest-simple/blob/main/tests/finance.test.mjs
+
+##### Config:
+This file contains different configurations of tests.
+As example, this file contains endpoint of Yahoo API Service.
+So that, you are able to define it once on one place and change it if necessary.
+https://github.com/dkanunik/api-with-jest-simple/blob/main/configs/AppConfig.cjs
 
 --- 
 

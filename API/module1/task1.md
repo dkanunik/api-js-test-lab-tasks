@@ -11,7 +11,7 @@ For this task you have to create API tests to check
 ---
 
 ### Preparation
-1. Clone the template project https://github.com/dkanunik/api-test-with-jest
+1. Clone the template project https://github.com/dkanunik/api-with-jest-simple
 1. Install dependencies ```npm install```
 
 ---
