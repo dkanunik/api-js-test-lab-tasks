@@ -2,13 +2,13 @@
 
 ## Task 8
 
----
-
 ### Description
+
 For this task you have to create API tests to check
 [Pastebin website](https://pastebin.com/) to share code snippets.
 For this task you have to practice HTTP data sending.
 Your test should contain verifications of successful data sending.
+
 ---
 
 ### Preparation
