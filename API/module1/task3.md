@@ -47,8 +47,10 @@ https://github.com/dkanunik/api-with-jest-simple/blob/main/configs/AppConfig.cjs
 --- 
 
 ### Specification
-Develop 1 test case and test for it to verify that the HTTP response code equals 422 when an invalid
-range is used.
+- develop 1 test case and test for it to verify that the HTTP response code equals 422 when an invalid
+range is used
+- develop 1 test case and test for it to verify that the HTTP response code equals 404 when a nonexistent company
+is uesed
 
 Use the template for test writing:
 https://github.com/dkanunik/api-with-jest-simple/blob/main/tests/finance.test.mjs#L17
@@ -63,6 +65,7 @@ https://github.com/dkanunik/api-with-jest-simple/blob/main/tests/finance.test.mj
 As a Finance API user
     I have to get HTTP response code
         422 for a invalid range
+        404 for a nonexistent company
 ```
 
 ---
