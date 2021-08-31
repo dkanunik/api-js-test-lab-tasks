@@ -2,8 +2,6 @@
 
 ## Task 6
 
----
-
 ### Description
 For this task you have to create API tests to check
 [Yahoo public API](https://query1.finance.yahoo.com/v8/finance/chart/AAPL?region=EQWEQWE&lang=en-US&includePrePost=false&interval=2m&range=1d&corsDomain=finance.yahoo.com&.tsrc=finance).
