@@ -1,6 +1,6 @@
 # Module 1
 
-## Task 7
+## Task 6
 
 ### Description
 For this task you have to create API tests to check
