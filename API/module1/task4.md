@@ -1,8 +1,9 @@
 # Module 1
 
-## Task 4
+## Task 5
 
 ### Description
+
 For this task you have to create API tests to check
 [Yahoo public API](https://query1.finance.yahoo.com/v8/finance/chart/AAPL?region=EQWEQWE&lang=en-US&includePrePost=false&interval=2m&range=1d&corsDomain=finance.yahoo.com&.tsrc=finance).
 
@@ -47,11 +48,10 @@ https://github.com/dkanunik/api-with-jest-simple/blob/main/configs/AppConfig.cjs
 --- 
 
 ### Specification
-Develop 1 test case and test for it to verify that the HTTP response code equals 404 when an invalid
-company name is being used.
+Develop 1 test case and test for it to verify that the HTTP response header "**x-request-id**" contains value that corresponds to the regular expression.
 
-Use the template for test writing: 
-https://github.com/dkanunik/api-with-jest-simple/blob/main/tests/finance.test.mjs#L25
+Use the template for test writing:  
+https://github.com/dkanunik/api-test-with-jest/-/blob/master/tests/finance.test.mjs#L40
 
 ---
 
@@ -61,8 +61,8 @@ https://github.com/dkanunik/api-with-jest-simple/blob/main/tests/finance.test.mj
 ### Expected result
 ```
 As a Finance API user
-    I have to get HTTP response code
-        404 for a nonexistent company
+    I have to get values for response headers
+        x-request-id
 ```
 
 ---
@@ -74,4 +74,3 @@ Please, use the following manuals to perform tasks:
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
-
