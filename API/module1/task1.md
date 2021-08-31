@@ -49,7 +49,7 @@ https://github.com/dkanunik/api-with-jest-simple/blob/main/configs/AppConfig.cjs
 
 ### Specification
 Please pay your attention that Finance models method is used for API calling:
-https://github.com/dkanunik/api-test-with-jest/-/blob/master/tests/finance.test.mjs#L13
+https://github.com/dkanunik/api-with-jest-simple/blob/main/tests/finance.test.mjs#L13
 
 This method is noneffective because the HTTP request parameters were hardcoded.
 The Model should support ability to define values for HTTP request parameters.
