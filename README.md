@@ -13,3 +13,6 @@ This repository contains task for API test automation and UI test automation mod
 * [Task 5](https://github.com/dkanunik/js-lab-tasks/blob/main/API/module1/task5.md)
 * [Task 6](https://github.com/dkanunik/js-lab-tasks/blob/main/API/module1/task6.md)
 * [Task 7](https://github.com/dkanunik/js-lab-tasks/blob/main/API/module1/task7.md)
+
+Every task description contains a chapter with link to relevant documentation.
+Follow the [article](https://github.com/dkanunik/js-lab-tasks/blob/main/Doc/index.md) with links to common resources that could be helpful.
