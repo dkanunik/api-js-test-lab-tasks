@@ -46,6 +46,9 @@ https://github.com/dkanunik/api-with-jest-simple/blob/main/configs/AppConfig.cjs
 ---
 
 ### Specification
+
+#### Task 1 <a name="task1">§</a> 
+
 Please pay your attention that Finance models method is used for API calling:
 https://github.com/dkanunik/api-with-jest-simple/blob/main/tests/finance.test.mjs#L13
 
@@ -59,6 +62,48 @@ There is a need to develop a method for Finance model to be able to define the f
 
 ---
 
+#### Task 2 <a name="task2">§</a>
+
+Have a look at the URL:
+
+``` 
+    .../chart/AAPL?region=US&lang=en-US&includePrePost=false&interval=2m&range=1d&corsDomain=finance.yahoo.com&.tsrc=finance
+```
+
+Develop 4 test cases and tests for them to verify that the HTTP response code equals 200
+when the following parameters are being put to Finance.getFinanceData() method:
+- company
+- region
+- interval
+- range
+- some combinations of parameters: company + interval, etc..
+
+To be able to use it as a template:
+``` 
+    /chart/`${COMPANY}`?region=`${TEMPLATE}`&lang=`${LANG}`&includePrePost=false&interval=2m&range=1d&corsDomain=finance.yahoo.com&.tsrc=finance
+```
+
+finance.test.mjs
+```
+    ...
+     let { status } = await Finance.getFinanceData({company:'AAPL'});
+    ...
+```
+
+---
+
+#### Task 3 <a name="task3">§</a>
+
+- develop 1 test case and test for it to verify that the HTTP response code equals 422 when an invalid
+  range is used
+- develop 1 test case and test for it to verify that the HTTP response code equals 404 when a nonexistent company
+  is uesed
+
+Use the template for test writing:
+https://github.com/dkanunik/api-with-jest-simple/blob/main/tests/finance.test.mjs#L17
+
+---
+
 ### Test run
 ``` npm test```
 
@@ -69,10 +114,10 @@ As a Finance API user
         200 for a valid range
         422 for a invalid range
         404 for a nonexistent company
-    
-    I have to get values for response headers
-        content-type
-        x-request-id
+        200 for a valid company
+        200 for a valid range
+        200 for a valid interval
+        200 for a valid region
 ```
 
 ---
@@ -83,4 +128,3 @@ Please, use the following manuals to perform tasks:
 - https://www.npmjs.com/package/axios
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods/GET
 - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
-- https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers
