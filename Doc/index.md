@@ -3,6 +3,8 @@
 #### JS
 - https://developer.mozilla.org/en-US/docs/Web/JavaScript
 - https://learn.javascript.ru/
+- https://github.com/Asabeneh/30-Days-Of-JavaScript
+- https://github.com/airbnb/javascript
 
 #### node.js
 - https://nodejs.dev/learn/introduction-to-nodejs
