@@ -51,7 +51,7 @@ https://github.com/dkanunik/api-with-jest-simple/blob/main/configs/AppConfig.cjs
 Develop 1 test case and test for it to verify that the HTTP response header "**x-request-id**" contains value that corresponds to the regular expression.
 
 Use the template for test writing:  
-https://github.com/dkanunik/api-test-with-jest/-/blob/master/tests/finance.test.mjs#L40
+https://github.com/dkanunik/api-with-jest-simple/blob/master/tests/finance.test.mjs#L40
 
 ---
 
