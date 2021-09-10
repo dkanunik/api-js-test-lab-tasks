@@ -33,7 +33,11 @@ The test [paste.test](https://github.com/dkanunik/api-with-jest-for-data/blob/ma
 contains test scenarios that should be updated to get completed tests. 
 
 ##### Lib:
-The [InputTestDataProvider](https://github.com/dkanunik/api-with-jest-for-data/blob/main/lib/InputTestDataProvider.mjs)
+
+- The [TokenProvider](https://github.com/dkanunik/api-with-jest-for-data/blob/main/lib/TokenProvider.mjs)
+class is responsible for tokens extraction. They are required to perform API call to Pastebin service.
+
+- The [InputTestDataProvider](https://github.com/dkanunik/api-with-jest-for-data/blob/main/lib/InputTestDataProvider.mjs)
 class is responsible for test data extraction. You have to update the "getTestData" method to be able to extract 
 test data in accordance with file name.
 
@@ -44,8 +48,9 @@ This directory contains test data.
 is stored on the [data/post_data/case1.json](https://github.com/dkanunik/api-with-jest-for-data/blob/main/data/post_data/case1.json) file
 You have to take care that it be put to InputTestDataProvider class.
 
-- [data/.pastbin_token](https://github.com/dkanunik/api-with-jest-for-data/blob/main/data/.pastbin_token) have to contain your Unique Developer API Key.
-You have to create this file by your own.
+- The [data/tokens](https://github.com/dkanunik/api-with-jest-for-data/blob/main/data/tokens/) dir have to contain your Unique Developer API Keys.
+You have to create a text file with token and put it to this dir. Then define token file name on test to perform API call. 
+Have a look at the example on [paste.test.mjs](https://github.com/dkanunik/api-with-jest-for-data/blob/b35d906f05321a7b8b86f9876a896a5ab5471056/tests/paste.test.mjs#L7)
 
 
 ##### Config:
